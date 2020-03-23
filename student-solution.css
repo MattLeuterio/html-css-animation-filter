@@ -1,1 +1,218 @@
 /* YOUR SOLUTIONS HERE */
+.ex-1-square {
+  transition: background 2s;
+}
+
+.ex-1-square:hover {
+  background: red;
+}
+
+.ex-2-square {
+  transition: width ease-out 1.5s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+.ex-3-square {
+  transition: border-radius linear 0.3s;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: opacity 1s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+.ex-5-square {
+ transition: transform 1s;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+
+.ex-6-img {
+  transition: filter 0.1s
+}
+
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+.ex-7-img {
+  transition: filter 2s;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(0.3) sepia(0.5);
+}
+
+.ex-8-img {
+  transition: filter 2s,
+              border-radius 2s;
+}
+
+.ex-8-img:hover {
+  filter: grayscale(0.8) brightness(1.1);
+  border-radius: 20px;
+}
+
+.ex-9-img {
+  transition: filter 2s,
+              border-radius 2s,
+              transform 2s;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(0.6) sepia(0.5);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+.ex-10-icon {
+  animation: rotate linear infinite 1s;
+}
+
+@keyframes rotate {
+  from {
+   transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ex-11-icon:hover {
+  animation: rotate75 linear 2s;
+}
+
+@keyframes rotate75 {
+  0% {
+   transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(300deg);
+  }
+}
+
+a:hover .ex-12-top-white {
+  animation: topLtoR 2s;
+}
+
+@keyframes topLtoR {
+  from {
+    left: 10%
+  }
+
+  50% {
+    left: 60%;
+  }
+
+  to {
+    left: 10%;
+  }
+}
+
+a:hover .ex-12-bottom-white {
+  animation: botRtoL 2s;
+}
+
+@keyframes botRtoL {
+  from {
+    right: 20%
+  }
+
+  50% {
+    right: 60%;
+  }
+
+  to {
+    right: 20%;
+  }
+}
+
+a:hover .ex-13-top-white {
+  animation: top-lap linear 2s;
+}
+
+@keyframes top-lap {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  20% {
+    top: -10px;
+    left: 80%;
+  }
+
+  40% {
+    top: 50px;
+    left: 80%;
+  }
+
+  60% {
+    top: 50px;
+    left: -10%;
+  }
+
+  80% {
+    top: -10px;
+    left: -10%;
+  }
+
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+a:hover .ex-13-bottom-white {
+  animation: bottom-lap linear 2s;
+}
+
+@keyframes bottom-lap {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
+
+  20% {
+    bottom: -10px;
+    right: 80%;
+  }
+
+  40% {
+    bottom: 50px;
+    right: 80%;
+  }
+
+  60% {
+    bottom: 50px;
+    right: -10%;
+  }
+
+  80% {
+    bottom: -10px;
+    right: -10%;
+  }
+
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
+}
